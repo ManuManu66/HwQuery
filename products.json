@@ -43,10 +43,10 @@
     },
     {
       "id": 1005,
-      "name": "Solar-Powered Hat 588",
-      "category": "Apparel",
+      "name": "Cord",
+      "category": "Electronics",
       "subcategory": "Hat",
-      "price": 587,
+      "price": 19.99,
       "currency": "USD",
       "stock": 137,
       "rating": 3.9

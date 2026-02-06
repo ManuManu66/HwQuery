@@ -46,4 +46,33 @@ app.get("/products", (req, res) => {
     res.status(201).json({ message: "Product added" })
 })
 
+
+
+app.put("/products/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const updatedProduct = req.body;
+
+    const data = JSON.parse(
+        fs.readFileSync("./products.json", { encoding: "utf-8" })
+    );
+
+    const productIndex = data.products.findIndex(
+        product => product.id === id
+    );
+
+    if (productIndex === -1) {
+        return res.status(404).json({ message: "Product not found" });
+    }
+
+    data.products[productIndex] = {
+        ...data.products[productIndex],
+        ...updatedProduct
+    };
+
+    fs.writeFileSync("./products.json", JSON.stringify(data, null, 2));
+
+    res.status(200).json({ message: "Product updated" });
+});
+
+
 app.listen(9000,  () => console.log("Server running on port 9000"))
