@@ -2,16 +2,6 @@
   "count": 505,
   "products": [
     {
-      "id": 1001,
-      "name": "Vintage Hat 641",
-      "category": "Apparel",
-      "subcategory": "Hat",
-      "price": 299.99,
-      "currency": "USD",
-      "stock": 105,
-      "rating": 4.8
-    },
-    {
       "id": 1002,
       "name": "Wireless Dumbbells 405",
       "category": "Sports",
