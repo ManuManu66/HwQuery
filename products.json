@@ -1,12 +1,12 @@
 {
-  "count": 505,
+  "count": 506,
   "products": [
     {
       "id": 1002,
       "name": "Wireless Dumbbells 405",
       "category": "Sports",
       "subcategory": "Dumbbells",
-      "price": 913.7,
+      "price": 999,
       "currency": "USD",
       "stock": 140,
       "rating": 3.3
@@ -61,7 +61,6 @@
       "stock": 94,
       "rating": 4
     },
-    
     {
       "id": 1008,
       "name": "Portable Blender 261",
@@ -5026,6 +5025,19 @@
       "subcategory": "Console",
       "price": 300,
       "stock": 30
+    },
+    {
+      "id": null
+    },
+    {
+      "id": null,
+      "name": "Test Product FS",
+      "category": "Electronics",
+      "subcategory": "Phones",
+      "price": 200,
+      "currency": "USD",
+      "stock": 5,
+      "rating": 4
     }
   ]
 }
